@@ -18,3 +18,9 @@ jobs:
               run: |
                   npm install
                   npm run test
+            - name: Show files
+              run: |
+                  ls dist
+            - name: Cleanup
+              run: |
+                  rm -rf dist
