@@ -1,6 +1,6 @@
 {
-  "name": "allpack",
-  "version": "1.0.0",
+  "name": "@stoppedwumm/allpack",
+  "version": "1.1.0",
   "description": "",
   "main": "cli.js",
   "bin": {
@@ -10,7 +10,7 @@
     "test": "sh test.sh"
   },
   "keywords": [],
-  "author": "",
+  "author": "stoppedwumm",
   "license": "ISC",
   "dependencies": {
     "commander": "^7.2.0",

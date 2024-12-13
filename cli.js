@@ -9,7 +9,7 @@ commander
   .parse(process.argv);
 
 const mode = commander.opts().mode;
-const configPath = commander.opts().config || "./allpack.config.js";
+const configPath = commander.opts().config ? path.join(process.cwd(), commander.opts().config) : path.join(process.cwd(), "allpack.config.js");
 
 const webpack = require("webpack");
 const fs = require("fs-extra");
