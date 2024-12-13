@@ -25,6 +25,11 @@ jobs:
               run: |
                   node dist/main.bundle.js
                   node dist/secondary.bundle.js
+            - name: Upload
+              uses: actions/upload-artifact@v2
+              with:
+                  name: dist
+                  path: dist
             - name: Cleanup
               run: |
                   rm -rf dist
