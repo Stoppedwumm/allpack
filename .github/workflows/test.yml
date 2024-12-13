@@ -21,6 +21,11 @@ jobs:
             - name: Show files
               run: |
                   ls dist
+            - name: Execute
+              run: |
+                  node dist/main.bundle.js
+                  node dist/secondary.bundle.js
             - name: Cleanup
               run: |
                   rm -rf dist
+                
