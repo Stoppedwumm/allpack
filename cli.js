@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const commander = require("commander");
+const path = require("path");
 
 commander
   .version("1.0.0", "-v, --version")
@@ -13,7 +14,6 @@ const configPath = commander.opts().config ? path.join(process.cwd(), commander.
 
 const webpack = require("webpack");
 const fs = require("fs-extra");
-const path = require("path");
 const config = require(configPath);
 const ignoreList = config.ignore || [];
 
